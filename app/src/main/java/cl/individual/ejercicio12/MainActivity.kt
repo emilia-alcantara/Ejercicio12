@@ -60,7 +60,7 @@ fun main() {
     }
 
     // Impresión de la lista completa
-    for (users in usuarios) {
+    for (users in usuarios.sortedBy { it.edad }) {
         println(users)
     }
 }
